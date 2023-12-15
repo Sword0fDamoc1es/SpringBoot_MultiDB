@@ -20,5 +20,8 @@ demo of multiDB using SpringBoot
 #### what will we do:
     create different beans. 
     each is a different datasource.
+    for the dynamic datasource bean, we autowire different bean correspondingly.
+    the dynamicDataSource is more like a switch, the static threadlocal tells what DB to use.
+    by setting that threadlocal during you create a request, we change the DB.
     
 
