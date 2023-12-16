@@ -39,6 +39,7 @@ public class DynamicDataSource2 extends AbstractRoutingDataSource{
         super.setTargetDataSources(targetDS);
 
         super.setDefaultTargetDataSource(ds1);
+
         super.afterPropertiesSet();
     }
 
