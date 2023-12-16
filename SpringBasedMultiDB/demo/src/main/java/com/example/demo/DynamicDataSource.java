@@ -10,7 +10,12 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
+
+@Component
+// @Primary // this will be the primary datasource
 public class DynamicDataSource implements DataSource,InitializingBean{
     // InitializingBean is used to initialize. override afterPropertiesSet() method.
 
