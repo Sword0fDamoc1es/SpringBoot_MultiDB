@@ -5,9 +5,10 @@ demo of multiDB using SpringBoot
 1. SpringBoot
 
 ### DB:
+virtual db.
 
-
-## idea and workflow:
+-----------------------
+## idea and workflow for Self-defined Dynamic Datasource:
 ##### workflow:
 1. request of DB operation.  
 2. goes to ORM framework. Need a JDBC, need a connection.  
@@ -23,5 +24,10 @@ demo of multiDB using SpringBoot
     for the dynamic datasource bean, we autowire different bean correspondingly.
     the dynamicDataSource is more like a switch, the static threadlocal tells what DB to use.
     by setting that threadlocal during you create a request, we change the DB.
-    
+
+------------------------
+## idea and workflow for abstractRoutingDatasource
+##### workflow:
+0. the lack of above: self-override method is a huge workload, and quite challenging.
+1. 
 

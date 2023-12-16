@@ -51,6 +51,7 @@ public class DynamicDataSource implements DataSource,InitializingBean{
 
         // By default, we do w.
         currentDataSource.set("w");
+
     }
 
     @Override
